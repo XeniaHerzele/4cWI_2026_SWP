@@ -1,0 +1,57 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;                   /* kein außenabstand */
+  background: #fff;
+}
+
+
+.box {
+  position: relative;          /* bezugspunkt für absolute boxen (.marker,...) */        
+  width: 200px;
+  height: 400px;
+  margin: 40px 0 0 40px; 
+  background: #a8d8ff;
+  border: 2px solid #69adff;
+}
+
+
+.marker {
+  position: absolute;         /* frei positioniert + bezogen .box */
+  top: -20px;
+  left: -20px;
+  width: 40px;
+  height: 40px;
+  background: #000;
+}
+
+
+.corner {
+  position: absolute;           /*frei positioniert + bezogen .box */
+  right: 0;                     /* bündig rechts der blauen box */
+  bottom: 0;                    /* bündig unten der blauen box */
+  width: 40px;
+  height: 40px;
+  background: #895cd6;
+  border: 2px solid #714daf;
+}
+
+
+.flex {
+  display: flex;                  /* kinder elemente werden flexbox angeordnet */
+  justify-content: space-around;
+  align-items: center;
+  margin: 50px 40px 0 40px;
+  padding: 40px;                   /* innenabstand 25 px alle seiten */
+  border: 2px solid #9e5fce;
+  background: #c67bff;
+}
+
+.item {
+  width: 40px;
+  height: 40px;
+  background: #d65c97;
+  border: 2px solid #b14e7e;
+}
