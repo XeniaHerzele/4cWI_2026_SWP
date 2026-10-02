@@ -1,80 +1,79 @@
-
 * {
-  box-sizing: border-box;
+  box-sizing: border-box;      /* padding + rahmen zählen zur breite/höhe */
 }
 
 body {
-  margin: 0;
-  padding: 0;
-  min-height: 100%;
+  margin: 0;                   /* kein außenabstand */
+  padding: 0;                  /* kein innenabstand */
+  min-height: 100%;            /* mind so hoch wie elternelement */
 }
 
-body{
-  background: #ffffff;
+body {
+  background: #ffffff;        
 }
 
 
 .fixed-box {
-  position: fixed;
-  top: 0;
-  right: 0;
-  width: 50px;
-  height: 50px;
-  background: #d9a8e6;
+  position: fixed;             /* bleibt am fenster auch beim scrollen */
+  top: 0;                    
+  right: 0;                    
+  width: 50px;                
+  height: 50px;              
+  background: #d9a8e6;        
 }
 
 .blue-box {
-  position: relative;
-  flex: 0 0 auto;
-  width: 400px;
-  height: 300px;
-  margin: 20px 0 50px 20px; 
-  padding: 20px;
-  background: #8fc4e0;
+  position: relative;          /* bezugspunkt für absolut braune Box */
+  flex: 0 0 auto;              /* nicht wachsen, nicht schrumpfen, größe nach width/height */
+  width: 400px;              
+  height: 300px;               
+  margin: 20px 0 50px 20px;    
+  padding: 20px;               /* innenabstand 20 px  alle seiten */
+  background: #8fc4e0;        
 }
 
 
 .blue-box h1 {
-  margin: 0 0 10px 0;
-  font-size: 24px;
+  margin: 0 0 10px 0;         
+  font-size: 24px;            
 }
 
 .blue-box ul {
-  margin: 0;
-  padding-left: 20px;
+  margin: 0;                 
+  padding-left: 20px;          /* einrückung links*/
 }
 
 .brown-box {
-  position: absolute;
-  right: 0;
-  bottom: 0;
-  width: 120px;
-  height: 100px;
-  background: #e8922a;
+  position: absolute;          /* frei positioniert, bezogen auf blaue box */
+  right: 0;                    /* bündig  rechten rand  blauen box */
+  bottom: 0;                   /* bündig am unteren rand der blauen box */
+  width: 120px;               
+  height: 100px;             
+  background: #e8922a;       
 }
 
 .yellow-bar {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-evenly;
-  align-items: center;
-  flex: 0 0 120px;
-  margin-top: 20px;
-padding: 10px;
-  width: 100%;
-  background: #fffc35;
-  border-top: 2px solid  #bab63f;
-  border-bottom: 2px solid #bab63f;
+  display: flex;               /* kinder elemente  mit flexbox angeordnet */
+  flex-direction: row;         /* kinder liegen nebeneinander */
+  justify-content: space-evenly; 
+  align-items: center;        
+  flex: 0 0 120px;             /* flex kind --> nicht wachsen/schrumpfen*/
+  margin-top: 20px;          
+  padding: 10px;               /* 10 px innenabstand  allen seiten */
+  width: 100%;                 
+  background: #fffc35;         
+  border-top: 2px solid  #bab63f;    
+  border-bottom: 2px solid #bab63f;  
 }
 
 .green-box {
-  flex: 0 0 50px;
-  width: 50px;
-  height: 50px;
-  background: #a5d400;
-  border: 2px solid #91b901;
+  flex: 0 0 50px;              /* nicht wachsen/schrumpfen + grundgröße 50 px */
+  width: 50px;                 
+  height: 50px;               
+  background: #a5d400;        
+  border: 2px solid #91b901;   
 }
 
 .bottom-space{
-  flex: 1;
+  flex: 1;                     /* wächst + füllt  restlichen freien platz */
 }
