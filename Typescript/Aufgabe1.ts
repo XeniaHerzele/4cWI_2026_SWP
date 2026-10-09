@@ -8,4 +8,4 @@ import type { Airplane } from "./flugzeuge";
         console.log(`Is Jet: ${airplane.isJet ? "Yes" : "No"}`);
     }
 
-    printAirplaneInfo(fleet[0]); // Ausgabe der Informationen des ersten Flugzeugs im Array
+    printAirplaneInfo(fleet[0]); // ausgabe der informationen des ersten flugzeugs im array
