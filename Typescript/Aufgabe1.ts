@@ -5,7 +5,7 @@ interface Airplane{
     isJet:boolean;
 }
 
-const fleet: Airplane[] = [
+const fleet: Airplane[] = [ /* [] sind ein Array */
     {
         model: "Boeing 747",
         passengerCapacity: 416,
@@ -25,6 +25,7 @@ const fleet: Airplane[] = [
         isJet: true
     },
 ];
+
     function printAirplaneInfo(airplane: Airplane): void {
         console.log(`Model: ${airplane.model}`);
         console.log(`Passenger Capacity: ${airplane.passengerCapacity}`);
@@ -32,4 +33,4 @@ const fleet: Airplane[] = [
         console.log(`Is Jet: ${airplane.isJet ? "Yes" : "No"}`);
     }
 
-    fleet.forEach(printAirplaneInfo);
+    printAirplaneInfo(fleet[0]); // Ausgabe der Informationen des ersten Flugzeugs im Array
